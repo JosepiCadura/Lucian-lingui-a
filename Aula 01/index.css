@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+
+.box {
+    min-width: 100px ; /* width largura, height altura */
+    min-height: 100px ;
+    color: aliceblue;
+    border-style: solid;
+    border-width: 10px;
+}
+.row {
+    display: flex; /* habilita o recurso flex*/
+    flex-direction: row; /* transforma o elemento em uma linha */
+    gap: 30px; /* espaçamento */
+    background-color: blueviolet;
+    flex-wrap: wrap;
+
+    /*
+    justify-content: space-between; //espaçar
+    justify-content: center; //alinhar ao centro
+    justify-content: flex-start; //alinhar a esqerda
+    justify-content: flex-end; //alinhar a direita
+    */
+}
+.sexo1 {
+    background-color: brown;
+    justify-content: space-between;
+}
+.sexo2 {
+    background-color: chartreuse;
+    justify-content: center;
+}
+.sexo3 {
+    background-color: darkgoldenrod;
+    justify-content: flex-start;
+}
+.row:nth-of-type(5) { /*para setar as linhas*/
+    justify-content: flex-end;
+    background-color: darkgreen;
+}
+
